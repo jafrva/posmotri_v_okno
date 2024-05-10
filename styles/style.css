@@ -219,22 +219,21 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 19px;
   height: 19px;
   margin-inline-end: 5px;
   border: 1px solid white;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
   width: 15px;
   height: 15px;
   background-color: white;
-  margin-inline-start: 1px;
-  margin-block-start: 1px;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
